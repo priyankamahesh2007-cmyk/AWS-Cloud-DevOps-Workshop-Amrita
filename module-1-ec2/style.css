@@ -1,58 +1,139 @@
+
+/* General page design */
 body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px 15px;
+    background: #eef3f8;
+    color: #263445;
+    line-height: 1.7;
 }
 
+/* Resume container */
 .container {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 50px;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
+/* Header design */
 header {
-	text-align: center;
-	margin-bottom: 50px;
+    text-align: center;
+    margin: -40px -40px 35px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #102a43, #087e8b);
+    color: white;
+    border-radius: 15px 15px 0 0;
 }
 
 h1 {
-	font-size: 36px;
-	margin: 0;
+    font-size: 38px;
+    margin: 0 0 10px;
+    letter-spacing: 1px;
 }
 
+header p {
+    font-size: 18px;
+    color: #b8f2e6;
+}
+
+/* Paragraph design */
 p {
-	font-size: 18px;
-	margin: 0;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 10px 0;
 }
 
+/* Section styling */
 section {
-	margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 h2 {
-	font-size: 24px;
-	margin-bottom: 20px;
+    font-size: 24px;
+    color: #087e8b;
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #b8f2e6;
 }
 
+/* Skills list */
 ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 li {
-	display: inline-block;
-	margin-right: 10px;
-	font-size: 18px;
+    display: inline-block;
+    margin: 5px 7px 5px 0;
+    padding: 7px 14px;
+    font-size: 15px;
+    color: #075e63;
+    background: #d9f3ef;
+    border-radius: 20px;
+    transition: 0.3s;
 }
 
+/* Hover effect for skills */
+li:hover {
+    background: #087e8b;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Subheadings */
 h3 {
-	font-size: 20px;
-	margin-top: 20px;
-	margin-bottom: 10px;
+    font-size: 19px;
+    color: #102a43;
+    margin-top: 20px;
+    margin-bottom: 8px;
 }
 
-p {
-	font-size: 18px;
-	line-height: 1.5;
+/* Project and experience sections */
+section p {
+    color: #46576a;
+}
+
+/* Footer-like project section accent */
+#projects {
+    padding: 20px;
+    background: #f5f9fc;
+    border-left: 4px solid #087e8b;
+    border-radius: 8px;
+}
+
+/* Mobile-friendly design */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .container {
+        padding: 22px;
+    }
+
+    header {
+        margin: -22px -22px 25px;
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    li {
+        font-size: 14px;
+    }
 }
